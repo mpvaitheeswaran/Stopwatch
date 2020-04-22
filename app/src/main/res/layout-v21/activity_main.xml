@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="257dp"
+        android:text="0:00:00"
+        android:textColor="#000000"
+        android:textDirection="firstStrongRtl"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvMilliSec"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/appBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvMilliSec"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="257dp"
+        android:text=":00"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvDisplay"
+        app:layout_constraintTop_toTopOf="@+id/appBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/ivStop"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivStart"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appBar"
+        app:layout_constraintVertical_bias="0.867"
+        app:srcCompat="@drawable/ic_stop" />
+
+    <ImageView
+        android:id="@+id/ivFlag"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="181dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@id/ivStop"
+        app:layout_constraintEnd_toStartOf="@+id/ivPause"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivStop"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_flag" />
+
+    <ImageView
+        android:id="@+id/ivPause"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@id/ivStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivFlag"
+        app:layout_constraintTop_toTopOf="@id/ivStart"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_pause" />
+
+    <ImageView
+        android:id="@+id/ivStart"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivStop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.867"
+        app:srcCompat="@drawable/ic_start" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="60dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="60dp" />
+
+
+    <ScrollView
+        android:id="@+id/svFlags"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/appBar"
+        app:layout_constraintVertical_bias="0.651">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFlag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
