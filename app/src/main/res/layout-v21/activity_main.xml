@@ -54,7 +54,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/appBar"
         app:layout_constraintVertical_bias="0.867"
-        app:srcCompat="@drawable/ic_stop" />
+        app:srcCompat="@drawable/btn_stop" />
 
     <ImageView
         android:id="@+id/ivFlag"
@@ -68,7 +68,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/ivStop"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_flag" />
+        app:srcCompat="@drawable/btn_flag" />
 
     <ImageView
         android:id="@+id/ivPause"
@@ -81,7 +81,7 @@
         app:layout_constraintStart_toEndOf="@+id/ivFlag"
         app:layout_constraintTop_toTopOf="@id/ivStart"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_pause" />
+        app:srcCompat="@drawable/btn_pause" />
 
     <ImageView
         android:id="@+id/ivStart"
@@ -94,7 +94,7 @@
         app:layout_constraintStart_toEndOf="@+id/ivStop"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.867"
-        app:srcCompat="@drawable/ic_start" />
+        app:srcCompat="@drawable/btn_start" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
