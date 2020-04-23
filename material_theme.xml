@@ -1,0 +1,14 @@
+<application>
+  <component name="MaterialThemeConfig">
+    <option name="accentMode" value="true" />
+    <option name="highlightColorEnabled" value="true" />
+    <option name="isContrastMode" value="true" />
+    <option name="isHighContrast" value="true" />
+    <option name="isWizardShown" value="true" />
+    <option name="pristineConfig" value="false" />
+    <option name="accentColor" value="00dd75" />
+    <option name="secondAccentColor" value="00dd75" />
+    <option name="userId" value="-b2f6ee1:171a64aa7a3:-8000" />
+    <option name="version" value="4.5.2" />
+  </component>
+</application>
