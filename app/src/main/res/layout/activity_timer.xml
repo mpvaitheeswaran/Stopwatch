@@ -12,13 +12,117 @@
         layout="@layout/toolbar" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvHours"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_gravity="center"
-        android:textColor="@color/colorAccent"
-        android:textSize="25sp"
-        android:text="Comming Soon..." />
+        android:text="Hours"
+        android:gravity="center"
+        android:textColor="@color/textColor"/>
 
+    <EditText
+        android:id="@+id/etHours"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="0"
+        android:hint="Hours"/>
+    <TextView
+        android:id="@+id/tvMinutes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Minutes"
+        android:gravity="center"
+        android:textColor="@color/textColor"/>
+    <EditText
+        android:id="@+id/etMinutes"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:gravity="center"
+        android:text="0"
+        android:hint="Minutes"/>
+    <TextView
+        android:id="@+id/tvSeconds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seconds"
+        android:gravity="center"
+        android:textColor="@color/textColor"/>
+    <EditText
+        android:id="@+id/etSeconds"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:gravity="center"
+        android:text="0"
+        android:hint="Second"
+        />
+    <Button
+        android:id="@+id/btnTimerStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/buttons"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Start"/>
+        <TextView
+            android:id="@+id/tvTimer"
+            android:text="0:00:00"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/textColor"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/ivStop"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:contentDescription="TODO"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ivStart"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.959"
+            app:srcCompat="@drawable/btn_stop" />
+
+        <ImageView
+            android:id="@+id/ivPause"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="@id/ivStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivStop"
+            app:layout_constraintTop_toTopOf="@id/ivStart"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/btn_pause" />
+
+        <ImageView
+            android:id="@+id/ivStart"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ivStop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/btn_start" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
