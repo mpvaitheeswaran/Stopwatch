@@ -10,11 +10,6 @@ public class StopWatch {
     private boolean run;
     private int seconds = 0;
 
-    StopWatch(int milliSec, boolean run, int seconds) {
-        this.milliSec = milliSec;
-        this.run = run;
-        this.seconds = seconds;
-    }
     //getters and setters
     public int getMilliSec() {
         return milliSec;
