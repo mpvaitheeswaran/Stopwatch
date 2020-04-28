@@ -8,11 +8,10 @@
         app:showAsAction="always"
         />
     <item
-        android:id="@+id/app_bar_mode"
+        android:id="@+id/action_settings"
         android:checked="false"
-        android:title="NightMode"
-        app:actionLayout="@layout/switch_item"
-        app:showAsAction="collapseActionView" />
+        android:title="Settings"
+        app:showAsAction="never" />\[
 
 
 </menu>
